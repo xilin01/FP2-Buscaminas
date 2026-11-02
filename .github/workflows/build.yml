@@ -1,0 +1,14 @@
+name: build
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compilar
+        run: g++ -std=c++17 -Wall -Wextra -Werror src/*.cpp -o buscaminas
+      - name: Partida de prueba
+        # elige el juego 3x3 del fichero y pisa la mina de (0,0)
+        run: printf 'juegos.txt\n2\n2\n0 0\nsalida.txt\n' | ./buscaminas | grep "Mina explotada"

@@ -1,0 +1,24 @@
+# Enunciado de la asignatura (material del profesorado, no se publica)
+*.pdf
+
+# Compilados
+buscaminas
+*.exe
+*.o
+*.obj
+*.pdb
+*.ilk
+build/
+Debug/
+Release/
+x64/
+
+# Visual Studio / VS Code
+.vs/
+*.user
+*.suo
+.vscode/
+
+# Partidas guardadas y salidas de prueba
+salida.txt
+*.ans
