@@ -1,6 +1,3 @@
-# Enunciado de la asignatura (material del profesorado, no se publica)
-*.pdf
-
 # Compilados
 buscaminas
 *.exe
